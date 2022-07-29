@@ -146,10 +146,17 @@ getCookie();
   padding: 0px 62px 0px 62px;
 }
 .login-container-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 50%;
   height: 100%;
   float: right;
-  background: rgb(177, 74, 74);
+  // background: rgb(177, 74, 74);
+  transform: translateX(100%);
+  background: transparent url('@/assets/images/login.svg') no-repeat center;
+  background-size: cover;
+  filter: blur(30px);
 }
 .login {
   display: flex;

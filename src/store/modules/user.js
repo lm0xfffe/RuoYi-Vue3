@@ -21,7 +21,7 @@ const useUserStore = defineStore('user', {
         login(username, password, code, uuid)
           .then(res => {
             setToken(res.data.token);
-            this.token = res.data.token;
+            // this.token = res.data.token;
             this.accountId = res.data.accountId;
             resolve();
           })
